@@ -1,0 +1,245 @@
+body {
+    font-family: Inter;
+    background: #e1e1e1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    min-height: 100vh;
+    margin: 20px;
+}
+
+.phone-frame {
+    width: 375px;
+    height: 800px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 0 0 10px #1e1c1c, 0 0 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.status-bar {
+    height: 44px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.status-icons {
+    display: flex;
+    width: 60px;
+    height: 25px;
+}
+
+.header {
+    background: #000080;
+    color: white;
+    padding: 25px 15px 15px;
+    border-radius: 10px;
+    margin: 0 16px;
+    margin-top: 8px;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.progress-label {
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #d8dbff;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.progress-bar {
+    height: 6px;
+    width: 275px;
+    background: rgba(255, 255, 255);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4a9eff;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.progress-percentage {
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 40px;
+}
+
+/* Content */
+.content {
+    padding: 16px 20px 100px;
+    background: #ffffff;
+    overflow-y: auto;
+    height: calc(800px - 44px - 83px);
+}
+
+.button-primary {
+    width: 100%;
+    background: #6a68be;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.degree-audit {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 550;
+    color: #000000;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.arrow {
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+/* Requirements Grid */
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.requirement-card {
+    background: #6d1d1d;
+    border-radius: 12px;
+    padding: 0;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 14px;
+    color: white;
+}
+
+.card-label {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.card-progress-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.card-progress-fill {
+    height: 100%;
+    background: #4a9eff;
+    border-radius: 2px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 83px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0 34px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    padding: 4px 20px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-item.active {
+    color: #007aff;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-label {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Home Indicator */
+.home-indicator {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 134px;
+    height: 5px;
+    background: #000;
+    border-radius: 100px;
+}
+
+/* Scrollbar */
+.scrollbar-placeholder {
+    position: absolute;
+    right: 7px;
+    top: 300px;
+    width: 6px;
+    height: 200px;
+    background: #d1d1d6;
+    border-radius: 10px;
+}
